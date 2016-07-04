@@ -16,7 +16,7 @@ func GetString(key, defaultValue string) string {
 // GetInt ...
 func GetInt(key string, defaultValue int) int {
 	if str := os.Getenv(key); str != "" {
-		if val, err := strconv.Atoi(str); err != nil {
+		if val, err := strconv.Atoi(str); err == nil {
 			return val
 		}
 	}
