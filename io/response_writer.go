@@ -11,7 +11,7 @@ import (
 
 type JSONResponseWriter struct {
 	http.ResponseWriter
-	log.Logger
+	Logger log.Logger
 }
 
 // NewJSONResponseWriter ...
